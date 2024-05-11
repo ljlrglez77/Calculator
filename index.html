@@ -11,6 +11,10 @@
         <h1>Standard Calculator</h1>
         <input id="display" readonly>
         <div id="keys">
+            <button onclick="clearDisplay()" class="operator-btn">C</button>       
+            <button onclick="SqrDisplay()" class="operator-btn">x²</button>
+            <button onclick="SRootDisplay()" class="operator-btn">√x</button>
+            <button onclick="takeOutToDisplay()" class="operator-btn">←</button>            
             <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
             <button onclick="appendToDisplay('9')">9</button>
@@ -26,11 +30,7 @@
             <button onclick="appendToDisplay('0')">0</button>
             <button onclick="appendToDisplay('.')">.</button>
             <button onclick="calculate()" class="igualdad-btn">=</button>
-            <button onclick="appendToDisplay('-')"class="operator-btn">-</button>
-            <button onclick="takeOutToDisplay()" class="operator-btn">←</button>          
-            <button onclick="clearDisplay()" class="operator-btn">C</button>        
-            <button onclick="SqrDisplay()" class="operator-btn">x²</button>
-            <button onclick="SRootDisplay()" class="operator-btn">√x</button>
+            <button onclick="appendToDisplay('-')"class="operator-btn">-</button>            
         </div>
     </div>
     <script src="js/index.js"></script>
